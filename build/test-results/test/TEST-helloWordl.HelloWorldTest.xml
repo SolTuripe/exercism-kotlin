@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="helloWordl.HelloWorldTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-12T15:36:50" hostname="Sols-MacBook-Air.local" time="0.009">
+  <properties/>
+  <testcase name="helloWorldTest()" classname="helloWordl.HelloWorldTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
