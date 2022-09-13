@@ -7,9 +7,8 @@ import org.junit.jupiter.api.Test
 class HelloWorldTest {
 
     @Test
-    fun helloWorldTest() {
-        var helloWorld = HelloWorld()
+    fun `hello world test`() {
+        val helloWorld = HelloWorld()
         assertEquals("Hello, World!", helloWorld.hello())
     }
-
 }
