@@ -22,4 +22,18 @@ class GigasecondTest {
         assertEquals(LocalDateTime.of(2009, Month.FEBRUARY, 19, 1, 46, 40), gigaSecond.date)
     }
 
+    @Test
+    fun `third test for date only specification of time`() {
+        val gigaSecond = Gigasecond(LocalDate.of(1959, Month.JULY, 19))
+
+        assertEquals(LocalDateTime.of(1991, Month.MARCH, 27, 1, 46, 40), gigaSecond.date)
+    }
+
+    @Test
+    fun `full time specified`() {
+        val gigaSecond = Gigasecond(LocalDateTime.of(2015, Month.JANUARY, 24, 22, 0, 0))
+
+        assertEquals(LocalDateTime.of(2046, Month.OCTOBER, 2, 23, 46, 40), gigaSecond.date)
+    }
+
 }
