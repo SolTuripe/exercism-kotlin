@@ -1,6 +1,6 @@
 package scrableScore
 
-class ScrableScore {
+object ScrabbleScore {
 
     fun scoreLetter(c: Char): Int {
         return when (c.uppercaseChar()) {

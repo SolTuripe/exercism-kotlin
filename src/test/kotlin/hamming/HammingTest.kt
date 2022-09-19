@@ -48,6 +48,5 @@ class HammingTest {
         }
         assertEquals("left and right strands must be of equal length", exception.message)
     }
-
 }
 
