@@ -35,4 +35,9 @@ class PangramTest {
     fun `with under scores`() {
         assertTrue(Pangram.isPangram("the_quick_brown_fox_jumps_over_the_lazy_dog"))
     }
+
+    @Test
+    fun `with numbers`() {
+        assertTrue(Pangram.isPangram("the 1 quick brown fox jumps over the 2 lazy dogs"))
+    }
 }
