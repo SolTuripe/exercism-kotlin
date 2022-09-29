@@ -20,4 +20,9 @@ class PangramTest {
     fun `only lower case`() {
         assertTrue(Pangram.isPangram("the quick brown fox jumps over the lazy dog"))
     }
+
+    @Test
+    fun `missing the letter x`() {
+        assertFalse(Pangram.isPangram("a quick movement of the enemy will jeopardize five gunboats"))
+    }
 }
