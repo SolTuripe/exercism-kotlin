@@ -30,4 +30,9 @@ class PangramTest {
     fun `missing the letter h`() {
         assertFalse(Pangram.isPangram("five boxing wizards jump quickly at it"))
     }
+
+    @Test
+    fun `with under scores`() {
+        assertTrue(Pangram.isPangram("the_quick_brown_fox_jumps_over_the_lazy_dog"))
+    }
 }
