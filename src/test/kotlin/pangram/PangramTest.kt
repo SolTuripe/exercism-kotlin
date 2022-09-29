@@ -40,4 +40,19 @@ class PangramTest {
     fun `with numbers`() {
         assertTrue(Pangram.isPangram("the 1 quick brown fox jumps over the 2 lazy dogs"))
     }
+
+    @Test
+    fun `missing letters replaced by numbers`() {
+        assertFalse(Pangram.isPangram("7h3 quick brown fox jumps ov3r 7h3 2 lazy dog"))
+    }
+
+    @Test
+    fun `mixed case and punctuation`() {
+        assertTrue(Pangram.isPangram("\"Five quacking Zephyrs jolt my wzx bed.\""))
+    }
+
+    @Test
+    fun `case insensitive`() {
+        assertFalse(Pangram.isPangram("the quick brown fox jumps over with lazy FX"))
+    }
 }
