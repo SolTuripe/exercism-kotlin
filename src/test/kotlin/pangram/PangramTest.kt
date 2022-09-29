@@ -25,4 +25,9 @@ class PangramTest {
     fun `missing the letter x`() {
         assertFalse(Pangram.isPangram("a quick movement of the enemy will jeopardize five gunboats"))
     }
+
+    @Test
+    fun `missing the letter h`() {
+        assertFalse(Pangram.isPangram("five boxing wizards jump quickly at it"))
+    }
 }
