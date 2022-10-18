@@ -1,6 +1,6 @@
 package matrix
 
-import org.junit.jupiter.api.Test
+import org.junit.Test
 import kotlin.test.assertEquals
 
 class MatrixTest {
